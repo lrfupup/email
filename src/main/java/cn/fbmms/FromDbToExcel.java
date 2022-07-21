@@ -20,7 +20,7 @@ public class FromDbToExcel {
             // 当前月
             int month = cal.get(Calendar.MONTH) + 1;
             // 当前日
-            int day = cal.get(Calendar.DATE)-1;
+            int day = cal.get(Calendar.DATE);
             // 创建可写入的Excel工作簿
             String fileName = "/opt/jar/data/"+year+"年"+month+"月"+day+"日"+"关键帧统计.xls";
             File file=new File(fileName);

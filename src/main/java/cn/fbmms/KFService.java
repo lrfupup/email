@@ -26,7 +26,7 @@ public class KFService {
         // 当前月
         int month = cal.get(Calendar.MONTH) + 1;
         // 当前日
-        int day = cal.get(Calendar.DATE)-1;
+        int day = cal.get(Calendar.DATE);
         // 创建可写入的Excel工作簿
         String cdate = ""+year+"-"+(month>10?month:"0"+month)+"-"+(day>10?day:"0"+day);
         String sql = "select id,cnt_date,cnt_time,sum_cnt,fiveframe_cnt,fiveframe_rate,sixframe_cnt,sixframe_rate,keyframe_cnt,keyframe_rate from fsk_keyframes where cnt_date = '"+cdate+"'";
